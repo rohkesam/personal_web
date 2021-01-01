@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head><style>
+    html{
+        scroll-behavior: smooth;
+    }
+    nav{
+        height:60px;   
+        margin: auto;
+        width:63%;
+        z-index:100;
+   }
+  .rectangle {
+      top:0;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position:fixed;
+  z-index:100;
+}
+   nav ul{
+      
+        top: -20px;
+       float:left;
+       overflow: hidden;
+        position: fixed;
+        z-index:100;
+       
+   }
+   nav ul li{
+       float:left;
+       list-style:none;
+       padding:0px 20px;
+       
+       
+   }
+   nav ul li a{
+       display: block;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       color:#222;
+       font-size:14px;
+       padding:16px 14px;
+       text-decoration: none;
+   }
+   h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       color:#222;
+       margin: 0;
+       font-size:60px;
+       text-align: center;
+       padding: 40px 0px;
+   }
+   h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       color:#5680E9;
+       margin: 0;
+       font-size:25px;
+       text-align: center;
+       padding-top: 55px;
+   }
+   h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       color:#222;
+       font-size: 15px;
+   }
+   .home,.about,.resume,.projects,.contact,.act{
+       min-height: 400px;
+   }
+   .home{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   }
+   .about{
+       background-color: rgb(153, 153, 153);
+   }
+   .resume{
+       background-color: rgb(0, 0, 0);
+   }
+   .projects{
+       background-color: rgb(255, 255, 255);
+   }
+   .act{
+       background-color: rgb(165, 165, 165);
+   }
+   .contact{
+       background-color: black;
+   }
+   .circle {
+  height: 40px;
+  width: 40px;
+  background-color:black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+}
+.arrow {
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+}
+.circle:hover{
+    background-color:#555555;
+}
+.center_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+.projects{
+    min-height: 768px;
+    display: flex;
+    
+}
+.project{
+
+    padding:80px 0px;
+}
+.work{
+       clear:both;
+       padding:40px 0px;
+   }
+   .odd{
+       float: left;
+        padding: 0px 20px
+   }
+   .even{
+       float: right;
+        padding: 0px 20px
+   }
+   .content{
+    font-size: 18px;
+   }
+   .project_img{
+    
+       height: 150px;
+       width: 200px;
+     
+   }
+   .projects .project p{
+    width:80%;
+    text-align: center;
+   }
+   .projects .project h3{
+    text-align: center;
+   }
+   .circle_img{
+       height: 150px;
+       width: 150px;
+       border-radius: 50%;
+   }
+   
+   .about h3, p, .act h3{
+       padding: 0px 30px;
+   }
+</style>
+</head> 
+<body id="top">
+    <div class="rectangle"></div>   
+    <nav >
+        
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#act">Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Rohith Kesamneni</h1>
+    <div id="home" class="home">
+        <a href="#about" class="circle">
+            <span class="arrow"></span>
+        </a>
+    </div>
+    <div id="about" class="about">
+        <h2>About Me</h2>
+        <div class="work">
+            <img class="circle_img odd" src="img/code.JPG">
+            <h3>Who am I?</h3>
+            <p >Hi, I’m Rohith Kesamneni, a University of Michigan class of 2024 Undergraduate with a
+                 passion for computer science. 
+                 From building LEGO robots when I was a kid to using different algorithms to decrypt ciphers, 
+                my fascination with computer science has grown into an enthusiasm for engineering the future.</p>
+        </div>
+        <div class="work">
+            <img class="circle_img even" src="img/code.JPG">
+            <h3>Science Olympiad</h3>
+            <p >Through my eight years with Science Olympiad,
+                 I have been able to explore numerous fields of studies including criminal forensics, 
+                 mechanical and electrical engineering, and biology. However, I have always been drawn 
+                 to computer related events such as Source Code(python), Codebusters(cryptology), and
+                  Game On(game design). Through Science Olympiad, 
+                I discovered my fascination with computer science, especially with learning new
+                 programming languages.</p>
+        </div>
+        <div class="work">
+            <img class="circle_img odd" src="img/code.JPG">
+            <h3>Tennis</h3>
+            <p>I have been an avid tennis player for nine years and had the opportunity to
+                 play on my high school Varsity team and become a finalist at the State-level tournament. 
+                 Tennis is unmatched in exercising both my body and mind,  
+                  However, my tennis skills have been a little rusty due to the pandemic, 
+                but I hope to play tennis recreationally at the University next year.</p>
+        </div>
+    </div>
+    <div id="resume" class="resume">
+        <h2>Resume</h2>
+        <br>
+        <h3 style="text-align: center;"><a href = "RohithKesamneni_Resume.pdf" target = "_blank">Printer Friendly Version</a></h3>
+        <br>
+        <img class="center_img" src="img/resume.jpg" height = "1160" width = "860" alt="Resume">
+    </div>
+    <div id="projects" class="projects">
+       
+        <h2>Projects</h2>
+        
+        <div class="project">
+        <a href="access.html" target="_blank"><img class="project_img" src="img/code.jpg"></a>
+        <h3>Accounting Application</h3>
+        <p>Created and enhanced an Accounting desktop application used by a family owned chillies Partnership Firm to track 
+            their sales, expenses, receivable accounts, payable accounts, etc. Additionally, the 
+            application generates year ending financial statements. This
+            application was developed using Microsoft Access, SQL and VBA scripting.</p>
+        <a href="web.html" target="_blank">more >></a>
+        </div>
+        <div class="project">
+            <a href="EECS.html" target="_blank"><img class="project_img" src="img/crabster.jpg"></a>
+        <h3>EECS280 Projects</h3>
+        <p >Created and enhanced an Accounting desktop application used by a family owned chillies Partnership Firm to track 
+            their sales, expenses, receivable accounts, payable accounts, etc. Additionally, the 
+            application generates year ending financial statements. This
+            application was developed using Microsoft Access, SQL and VBA scripting.</p>
+        <a href="web.html" target="_blank">more >></a>
+        </div>
+        <div class="project">
+            <a href="web.html" target="_blank"><img class="project_img" src="img/code.jpg"></a>
+        <h3>Personal Website</h3>
+        <p >Created and enhanced an Accounting desktop application used by a family owned chillies Partnership Firm to track 
+            their sales, expenses, receivable accounts, payable accounts, etc. Additionally, the 
+            application generates year ending financial statements. This
+            application was developed using Microsoft Access, SQL and VBA scripting.</p>
+        <a href="web.html" target="_blank">more >></a>
+        </div>       
+    </div>
+    <div id="act" class="act">
+        <h2>Activites</h2>
+        <div class="activty">
+            <div class="work">
+                <img class=odd src="img/bluelabbd_orig.jpg" alt="Bluelabs Bangladesh Logo" width="400" height="200">
+                <h3>Current: Bluelabs Bangladesh Design Team</h3>
+                <h4 style="padding-bottom: 20px;">09/2020 - Present</h4>
+                <p class="content"> BlueLabs Bangladesh is an organization that identifies and solves various technological problems in  
+                    underdeveloped regions of Bangladesh with sustainable solutions. Currently, we are developing an app/website to educate
+                    underpriveleged females about the basics of child birth and care. As part of the desgin team, I will be helping with devloping 
+                    the app and making sure that its is accesible and easy to use.
+                </p>
+            </div>
+            <div class="work">
+                <img class=even src="img/bluelabbd_orig.jpg" a  lt="Bluelabs Bangladesh Logo" width="400" height="200">
+                <h3 style="padding-left: 20px;">CyberGenerations Program</h3>
+                <h4 style="padding-bottom: 20px; padding-left: 20px;">Westland, MI • 07/2019 - 09/2019</h4>
+                <p class="content" style="padding-left: 20px;"> CyberGenerations is a program dedicated to educating the elderly population
+                    about the basics of cybersecurity and how to safely navigate the internet. I established this program at the Westland Community
+                    Center, and over a two month period I walked Seniors through the course content. These
+                    workshops were considered highly resourceful by the Director and Seniors, and are continuing to be run by students at the University of Detroit Mercy.
+                </p>
+           </div>
+           <div class="work">
+            <img class=odd src="img/bluelabbd_orig.jpg" alt="Bluelabs Bangladesh Logo" width="400" height="200">
+            <h3>Forever Young</h3>
+            <h4 style="padding-bottom: 20px;">09/2018 - 04/2020</h4>
+            <p class="content"> I established this club in my highschool to bridge the gap between the younger and older generations.
+                As a club, we visited local senior care facilities and interacted with them with games, stories, and other actvities.
+                Our goal was to enrich happiness in each senior we visted because along with their chronic diseases 
+                many of them feel isolated from society.
+            </p>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>Contact</h2>
+    </div>
+    
+</body>
+
